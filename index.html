@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Viralpost</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <style type="text/css">
+
+  body{
+  	    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        overflow-x:hidden; 
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    
+    border-radius: 0px;
+    background: #777; 
+}
+  @media only screen and (min-width: 980px) {
+
+}
+
+@media only screen and (max-width: 980px) {
+  /*.phone{
+  	margin-left: 10px;
+  	margin-right: 10px;
+  }
+*/}
+
+.chat:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 6px solid #58e870;
+    width: 100%;
+    height: 0;
+}
+
+.chat{
+  padding-left:0px;
+  padding-right:0px;
+  border-left: 1px solid rgba(0,0,0,.08);
+  margin-top:10px;
+}
+
+body{
+  background-image:url('img/bg1.png');
+}
+
+.chat-header{
+  height:59px;
+  padding-left:16px;
+  padding:10px;
+  background-color:#eee;
+}
+
+.chatbox-div-pos{
+  overflow:none;
+  position:relative;
+  background-color: #f7f9fa;
+  height:500px;
+  overflow-x:hidden;
+  width:100%;
+}
+
+.chatmessages{
+  overflow:auto;
+  position:absolute;
+  bottom:0;
+  margin-top:20px;
+  max-height:480px;
+  width:97%;
+}
+
+.user-chat-margin{
+  margin-top:20px;
+}
+
+.user{
+  float: right;
+  padding:10px;
+  background-color:#00897B;
+  border-radius:3px;
+  color:white;
+}
+
+.bot{
+  float: left;
+  padding:10px;
+  background-color:blue;
+  border-radius:3px;
+  color:white;
+}
+
+.bot-chat-margin{
+  margin-top:20px;
+}
+
+.suggestions-div{
+  background-color: #f7f9fa;
+  overflow-x:scroll; 
+}
+
+.suggestions-margin{
+  margin-bottom:20px;
+  margin-top:10px;
+}
+
+.suggestions-text{
+  font-weight:700;
+  border:1px solid black;
+  border-radius:15px;
+  padding:10px;
+}
+
+.input-div{
+  background-color: #f7f9fa;
+  padding-bottom:20px;
+}
+
+.input-borde{
+  background-color:#eceff1;
+  border: 1px solid #e6e6e6;
+  height:42px;
+}
+
+.input-text{
+  width:100%;
+  border-radius:4px;
+  background-color:#eceff1;
+  border:0px;
+  font-size:20px;
+  padding-top:5px;
+}
+
+  </style>
+
+</head>
+
+<body>
+<div class="container-fluid">
+	<div class="row">
+      <div class="col-sm-12 col-xs-12">
+  		  <div class="col-sm-2 hidden-xs"></div>
+  			<div class="col-sm-8 col-xs-12 chat">
+  			    <div class="chat-header">
+    				  <img src="img/01.jpg" height="40px" width="40px" class="img-circle">
+    				</div>
+            <div class="col-sm-12 col-xs-12 chatbox-div-pos">
+            <div class="col-sm-12 col-xs-12 chatmessages">
+              <div class="col-sm-12 col-xs-12 user-chat-margin">
+              <div class="col-sm-4 col-xs-4"></div>  
+              <div class="col-sm-8 col-xs-8"><span class="user">Teach me new wordsWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?english</span></div></div>
+               <div class="col-sm-12 col-xs-12 user-chat-margin">
+              <div class="col-sm-4 col-xs-4"></div> 
+              <div class="col-sm-8 col-xs-8"><span class="user">Teach me new wordsWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?english</span></div></div>
+               <div class="col-sm-12 col-xs-12 user-chat-margin">
+              <div class="col-sm-4 col-xs-4"></div>
+              <div class="col-sm-8 col-xs-8"><span class="user">Teach me new words</span></div></div>
+               <div class="col-sm-12 col-xs-12 bot-chat-margin">
+               <div class="col-sm-8 col-xs-8"><span class="bot">Which level would you like to learn?englishTeach me new wordsWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?english</span></div></div>
+               <div class="col-sm-12 col-xs-12 bot-chat-margin">
+               <div class="col-sm-8 col-xs-8"><span class="bot">Which level would you like to learn?english</span></div></div>
+               <div class="col-sm-12 col-xs-12 bot-chat-margin">
+               <div class="col-sm-8 col-xs-8"><span class="bot">Which level would you like to learn?english</span></div></div>
+               <div class="col-sm-12 col-xs-12 bot-chat-margin">
+               <div class="col-sm-8 col-xs-8"><span class="bot">Which level would you like to learn?english</span></div></div>
+               <div class="col-sm-12 col-xs-12 bot-chat-margin">
+               <div class="col-sm-8 col-xs-8"><span class="bot">Which level would you like to learn?english</span></div></div>
+               <div class="col-sm-12 col-xs-12 bot-chat-margin">
+               <div class="col-sm-8 col-xs-8"><span class="bot">Which level would you like to learn?english</span></div></div>
+               
+               <div class="col-sm-12 col-xs-12 bot-chat-margin">
+               <div class="col-sm-8 col-xs-8"><span class="bot">Which level would you like to learn?english</span></div></div>
+               <div class="col-sm-12 col-xs-12 bot-chat-margin">
+               <div class="col-sm-8 col-xs-8"><span class="bot">Which level would you like to learn?english</span></div></div>
+               <div class="col-sm-12 col-xs-12 user-chat-margin">
+              <div class="col-sm-4 col-xs-4"></div> 
+              <div class="col-sm-8 col-xs-8"><span class="user">Teach me new wordsWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?english</span></div></div>
+              
+               <div class="col-sm-12 col-xs-12 user-chat-margin">
+              <div class="col-sm-4 col-xs-4"></div> 
+              <div class="col-sm-8 col-xs-8"><span class="user">Teach me new wordsWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?english</span></div></div>
+               <div class="col-sm-12 col-xs-12 user-chat-margin">
+              <div class="col-sm-4 col-xs-4"></div> 
+              <div class="col-sm-8 col-xs-8"><span class="user">Teach me new wordsWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?englishWhich level would you like to learn?english</span></div></div>
+
+              <div class="col-sm-12 col-xs-12 user-chat-margin">
+              <div class="col-sm-4 col-xs-4"></div> 
+              <div class="col-sm-8 col-xs-8"><span class="user">HI</span></div></div>
+
+            </div>
+
+<!--             <div style="position:fixed;bottom:15%;right:18%;background-color: #f7f9fa;">
+              <div class="pull-right" style="margin-bottom:30px;margin-top:10px;">
+              <span style="font-weight:700;">Few Suggestions</span>
+              <span style="font-weight:700;border:1px solid black;border-radius:15px;padding:10px;">Next</span>
+              <span style="font-weight:700;border:1px solid black;border-radius:15px;padding:10px;">Example</span>
+              <span style="font-weight:700;border:1px solid black;border-radius:15px;padding:10px;">Synonyms</span>
+              </div>
+            </div> -->
+            </div>
+
+
+            <div class="col-sm-12 col-xs-12 suggestions-div">
+              <div class="pull-right suggestions-margin">
+              <span style="font-weight:700;">Few Suggestions</span>
+              <span class="suggestions-text">Next</span>
+              <span class="suggestions-text">Example</span>
+              <span class="suggestions-text">Synonyms</span>
+              </div>
+            </div>
+          
+             <div class="col-sm-12 col-xs-12 input-div">
+               <div class="col-sm-12 col-xs-12 input-border">
+               <!-- <div class="col-sm-1"></div> -->
+               <div class="col-sm-12">
+               <input type="text" class="input-text">
+               </div>
+               </div>
+             </div>
+            
+  			</div>
+	</div>	
+  </div>
+</div>
+</body>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+<!-- jQuery -->
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript">
+  $('#chatmessages').scrollTop($('#chatmessages')[0].scrollHeight);
+  </script>
+
+</html>
